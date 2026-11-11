@@ -186,6 +186,6 @@ Axgent 的实现参考了以下项目；下面写清具体借鉴了什么，未�
 ## 许可证范围（重要）
 
 - **Axgent 原创代码**（`src/`、`docs/`、`agent/` 下的 Kotlin/Compose 代码等）：[MIT License](./LICENSE)。
-- **`android/` 执行引擎**：包含基于 [AutoX.js](https://github.com/kkevsekk1/AutoX) 的定制分支。上游 `android/LICENSE.md` 采用 **MPL-2.0 + 非商业性使用限制**，并另附 `android/LICENSE-GPL-V2.md`；因此 `android/` 及其衍生物**不适用 MIT**，也不得用于商业或盈利用途。
+- **`android/` 执行引擎**：包含基于 [AutoX.js](https://github.com/aiselp/AutoX) 的定制分支。上游 `android/LICENSE.md` 采用 **MPL-2.0 + 非商业性使用限制**，并另附 `android/LICENSE-GPL-V2.md`；因此 `android/` 及其衍生物**不适用 MIT**，也不得用于商业或盈利用途。
 - **`runtime/` 与 `android/app/src/main/assets/vd`**：来自 [agent-mobile-use](https://github.com/AcidGr/agent-mobile-use)，遵循其项目许可证。
 - 分发整仓或 APK 时，必须同时遵守上述上游许可证；如需商用，请先取得相应授权，或替换/移除受限组件。
