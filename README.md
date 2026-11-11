@@ -33,7 +33,6 @@
 | [docs/CACHE.md](docs/CACHE.md) | 上下文与 KV Cache 优化 |
 | [docs/WEB.md](docs/WEB.md) | Web 搜索 / 抓取 provider 链 |
 | [docs/PERFORMANCE.md](docs/PERFORMANCE.md) | 帧率与耗时测量方法 |
-| [docs/HANDOFF-PROMPT.md](docs/HANDOFF-PROMPT.md) | 交接文档生成提示词模板 |
 
 ## 构建与安装
 

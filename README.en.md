@@ -33,7 +33,6 @@ A general-purpose GUI agent for Android: describe a task in natural language, an
 | [docs/CACHE.md](docs/CACHE.md) | Context and KV-cache optimization |
 | [docs/WEB.md](docs/WEB.md) | Web search / fetch provider chain |
 | [docs/PERFORMANCE.md](docs/PERFORMANCE.md) | Frame-rate and latency measurement |
-| [docs/HANDOFF-PROMPT.md](docs/HANDOFF-PROMPT.md) | Handoff prompt template |
 
 ## Build and install
 
