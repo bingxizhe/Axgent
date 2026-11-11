@@ -186,6 +186,6 @@ The implementation is independent; no Cherry Studio source code was copied.
 ## License scope (important)
 
 - **Axgent original code** (`src/`, `docs/`, Kotlin/Compose code under `agent/`, etc.): [MIT License](./LICENSE).
-- **`android/` engine**: contains a customized fork of [AutoX.js](https://github.com/kkevsekk1/AutoX). Upstream `android/LICENSE.md` is **MPL-2.0 plus a non-commercial restriction**, with `android/LICENSE-GPL-V2.md` alongside; therefore `android/` and its derivatives are **not MIT-licensed** and may not be used commercially or for profit.
+- **`android/` engine**: contains a customized fork of [AutoX.js](https://github.com/aiselp/AutoX). Upstream `android/LICENSE.md` is **MPL-2.0 plus a non-commercial restriction**, with `android/LICENSE-GPL-V2.md` alongside; therefore `android/` and its derivatives are **not MIT-licensed** and may not be used commercially or for profit.
 - **`runtime/` and `android/app/src/main/assets/vd`**: from [agent-mobile-use](https://github.com/AcidGr/agent-mobile-use); follow that project's license.
 - When distributing the repository or APK you must also comply with the upstream licenses above. For commercial use, obtain the appropriate permission or replace/remove the restricted components.
