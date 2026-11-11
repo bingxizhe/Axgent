@@ -43,7 +43,6 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Switch
-import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
@@ -705,7 +704,7 @@ private fun ModelRow(
             } else {
                 Icon(
                     Icons.Filled.Refresh,
-                    contentDescription = "检测模型",
+                    contentDescription = AxLang.t("检测模型"),
                     tint = colors.textFaint,
                     modifier = Modifier
                         .size(32.dp)
@@ -727,7 +726,7 @@ private fun ModelRow(
             }
             Icon(
                 Icons.Filled.Delete,
-                contentDescription = "删除模型",
+                contentDescription = AxLang.t("删除模型"),
                 tint = colors.textGhost,
                 modifier = Modifier
                     .size(32.dp)
@@ -1388,7 +1387,7 @@ private fun ProviderListItem(
                 IconButton(onClick = onDelete, modifier = Modifier.size(32.dp)) {
                     Icon(
                         Icons.Filled.Delete,
-                        contentDescription = "删除服务商",
+                        contentDescription = AxLang.t("删除服务商"),
                         tint = MaterialTheme.colorScheme.onSurfaceVariant,
                         modifier = Modifier.size(16.dp)
                     )

@@ -243,6 +243,9 @@ object AgentStore {
             activeVisionModelId = activeVision?.id ?: "",
             thinking = if (thinking in THINKING_LEVELS) thinking else "default",
             theme = (root?.optString("theme", "system") ?: "system").let { if (it in listOf("system", "light", "dark")) it else "system" },
+            language = (appearance?.optString("language", "auto") ?: "auto").let {
+                if (it in listOf("auto", "zh", "en")) it else "auto"
+            },
             accentId = (appearance?.optString("accent", "mist") ?: "mist").let {
                 if (it in listOf("mist", "daiqing", "dusk", "turquoise", "amber", "graphite", "custom", "wallpaper")) it else "mist"
             },
@@ -334,6 +337,7 @@ object AgentStore {
             appearance.put("wallpaper", cfg.wallpaperAccent)
             appearance.put("chatTextScale", cfg.chatTextScale.toDouble())
             appearance.put("foldTurns", cfg.foldCompletedTurns)
+            appearance.put("language", cfg.language)
             root.put("appearance", appearance)
             root.put(
                 "capabilities",
@@ -627,6 +631,12 @@ object AgentStore {
 
     fun setTheme(theme: String) {
         saveConfig(config.copy(theme = theme))
+    }
+
+    /** 界面语言：auto 跟随系统，zh 中文，en English。 */
+    fun setLanguage(language: String) {
+        val lang = if (language in listOf("auto", "zh", "en")) language else "auto"
+        saveConfig(config.copy(language = lang))
     }
 
     /** DSH 配色切换：预设 / 自定义 / 跟随壁纸。 */

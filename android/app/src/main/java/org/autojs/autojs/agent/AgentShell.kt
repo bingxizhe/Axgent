@@ -46,7 +46,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalDrawerSheet
 import androidx.compose.material3.ModalNavigationDrawer
-import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDrawerState
 import androidx.compose.material3.DrawerValue
 import androidx.compose.runtime.Composable
@@ -688,7 +687,7 @@ private fun AxNavIcon(
     ) {
         Icon(
             icon,
-            contentDescription = description,
+            contentDescription = AxLang.t(description),
             tint = if (selected) colors.primary else colors.textMuted,
             modifier = Modifier.size(18.dp)
         )

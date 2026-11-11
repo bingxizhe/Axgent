@@ -39,7 +39,6 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Switch
 import androidx.compose.material3.SwitchDefaults
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
@@ -149,7 +148,7 @@ fun AxCircleButton(
     ) {
         Icon(
             icon,
-            contentDescription = contentDescription,
+            contentDescription = contentDescription?.let { AxLang.t(it) },
             tint = if (enabled) tint else AxTheme.colors.textGhost,
             modifier = Modifier.size(size * 0.5f)
         )

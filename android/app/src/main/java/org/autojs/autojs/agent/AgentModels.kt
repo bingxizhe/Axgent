@@ -143,6 +143,8 @@ data class UiConfig(
     val activeVisionModelId: String = "",
     val thinking: String = "default",
     val theme: String = "system",
+    /** auto | zh | en；首次启动 auto 按系统语言选择。 */
+    val language: String = "auto",
     /** DSH 配色：mist | daiqing | dusk | turquoise | amber | graphite | custom | wallpaper */
     val accentId: String = "mist",
     val customAccent: String = "#4B67B4",

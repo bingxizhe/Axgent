@@ -41,7 +41,6 @@ import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -503,7 +502,7 @@ private fun ShotImage(preview: String) {
     if (!path.isNullOrBlank() && File(path).exists()) {
         AsyncImage(
             model = File(path),
-            contentDescription = "截图",
+            contentDescription = AxLang.t("截图"),
             contentScale = ContentScale.Fit,
             modifier = Modifier.fillMaxWidth().height(220.dp).background(Color(0xFF101010))
         )

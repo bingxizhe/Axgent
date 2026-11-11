@@ -54,7 +54,6 @@ import androidx.compose.material.icons.filled.Warning
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -619,7 +618,7 @@ private fun ContextUsageBadge(promptTokens: Int, contextWindow: Int) {
         Canvas(
             Modifier
                 .size(13.dp)
-                .semantics { contentDescription = "上下文使用率 $label" }
+                .semantics { contentDescription = AxLang.t("上下文使用率 $label") }
         ) {
             val stroke = 1.4.dp.toPx()
             val radius = (size.minDimension - stroke) / 2f
@@ -938,7 +937,7 @@ fun ComposerBar(
                         )
                         Icon(
                             Icons.Filled.Close,
-                            contentDescription = "移除附件",
+                            contentDescription = AxLang.t("移除附件"),
                             tint = colors.textGhost,
                             modifier = Modifier.size(16.dp).clickable { AgentStore.clearAttachment() }
                         )

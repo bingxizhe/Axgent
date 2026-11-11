@@ -41,7 +41,6 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.getValue
@@ -281,6 +280,17 @@ fun AppearanceScreen(onBack: () -> Unit) {
             Modifier.padding(horizontal = AxSpace.gutter),
             verticalArrangement = Arrangement.spacedBy(18.dp)
         ) {
+            AxSection("语言") {
+                Row(
+                    Modifier.fillMaxWidth().padding(12.dp),
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    AxPill("跟随系统", { AgentStore.setLanguage("auto") }, selected = cfg.language == "auto")
+                    AxPill("中文", { AgentStore.setLanguage("zh") }, selected = cfg.language == "zh")
+                    AxPill("English", { AgentStore.setLanguage("en") }, selected = cfg.language == "en")
+                }
+            }
+
             AxSection("深浅") {
                 Row(
                     Modifier.fillMaxWidth().padding(12.dp),
@@ -1061,7 +1071,7 @@ fun AboutScreen(onBack: () -> Unit) {
                     ) {
                         Image(
                             painterResource(R.drawable.ic_axgent_foreground),
-                            contentDescription = "Axgent 图标",
+                            contentDescription = AxLang.t("Axgent 图标"),
                             contentScale = ContentScale.Fit,
                             // 前景按自适应图标的 60% 安全区设计；应用内小尺寸下放大一点，
                             // 避免在 48dp 圆角块里显得过空。

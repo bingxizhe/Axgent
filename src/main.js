@@ -39,7 +39,7 @@ try {
   }
 } catch (e0) { }
 
-var VERSION = '0.4.0-m0';
+var VERSION = '1.0.0';
 var TASK_FILE = '/sdcard/Download/phone-agent/task.txt';
 var RESUME_FILE = '/sdcard/Download/phone-agent/resume.txt';
 var RUNS = '/sdcard/Download/phone-agent/runs';
