@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Axgent 图标前景：由 f17c5f617ca1a8.svg（rev.5）转换为 Android VectorDrawable。
+  透明背景；图形缩小到 54%，水平居中并略微上移，
+  避免主体撑满自适应图标遮罩、且视觉重心偏下。
+  背景层使用 #F5F5F8（参考图同款浅灰纸面）。
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="1536"
+    android:viewportHeight="1536">
+
+    <group
+        android:translateX="353.28"
+        android:translateY="299.0"
+        android:scaleX="0.54"
+        android:scaleY="0.54">
+
+        <!-- 天线 -->
+        <path
+            android:pathData="M477,242 L548,397"
+            android:strokeColor="#AAE122"
+            android:strokeWidth="27"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M1059,242 L988,397"
+            android:strokeColor="#AAE122"
+            android:strokeWidth="27"
+            android:strokeLineCap="round" />
+
+        <!-- 两侧手臂（圆角胶囊） -->
+        <path
+            android:pathData="M216.5,743 A78.5,78.5 0 0 1 295,821.5 L295,1204.5 A78.5,78.5 0 0 1 216.5,1283 A78.5,78.5 0 0 1 138,1204.5 L138,821.5 A78.5,78.5 0 0 1 216.5,743 Z"
+            android:fillColor="#AAE122" />
+        <path
+            android:pathData="M1319.5,743 A78.5,78.5 0 0 1 1398,821.5 L1398,1204.5 A78.5,78.5 0 0 1 1319.5,1283 A78.5,78.5 0 0 1 1241,1204.5 L1241,821.5 A78.5,78.5 0 0 1 1319.5,743 Z"
+            android:fillColor="#AAE122" />
+
+        <!-- 主体 -->
+        <path
+            android:pathData="M338,709 A430,430 0 0 1 1198,709 L1198,1489 L338,1489 Z"
+            android:fillColor="#AAE122" />
+
+        <!-- 眼睛 -->
+        <path
+            android:pathData="M565.5,528.5 A40.5,40.5 0 1 1 565.5,609.5 A40.5,40.5 0 1 1 565.5,528.5 Z"
+            android:fillColor="#FFFFFF" />
+        <path
+            android:pathData="M970.5,528.5 A40.5,40.5 0 1 1 970.5,609.5 A40.5,40.5 0 1 1 970.5,528.5 Z"
+            android:fillColor="#FFFFFF" />
+
+        <!-- 盾牌：SVG 的 objectBoundingBox 线性渐变映射到路径包围盒 -->
+        <path
+            android:pathData="M768,710 L1040,842 L996,1190 L768,1347 L540,1190 L496,842 Z"
+            android:strokeColor="#005A30"
+            android:strokeWidth="6"
+            android:strokeLineJoin="round">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:type="linear"
+                    android:startX="496"
+                    android:startY="710"
+                    android:endX="1040"
+                    android:endY="1347"
+                    android:startColor="#0B7C46"
+                    android:centerColor="#006B39"
+                    android:endColor="#00582F" />
+            </aapt:attr>
+        </path>
+
+        <!-- 盾牌内的断弧涟漪 -->
+        <path
+            android:pathData="M 721.1,956.3 A 137,137 0 0 1 896.7,1131.9 M 876.0,1169.3 A 137,137 0 0 1 655.8,1163.6 M 634.0,1113.5 A 137,137 0 0 1 671.1,988.1"
+            android:strokeColor="#08D9B0"
+            android:strokeWidth="7"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 793.1,991.3 A 97,97 0 0 1 819.4,1167.3 M 764.6,1181.9 A 97,97 0 0 1 759.5,988.4"
+            android:strokeColor="#08D9B0"
+            android:strokeWidth="6"
+            android:strokeLineCap="round" />
+        <path
+            android:pathData="M 717.2,1061.3 A 56,56 0 0 1 816.5,1057.0 M 823.5,1092.8 A 56,56 0 0 1 758.3,1140.1 M 741.7,1134.4 A 56,56 0 0 1 712.9,1075.3"
+            android:strokeColor="#08D9B0"
+            android:strokeWidth="6"
+            android:strokeLineCap="round" />
+
+        <!-- 中央白色光标：保留原轮廓的圆角、翼凹口与半圆尾 -->
+        <group
+            android:translateX="873.73"
+            android:translateY="858.61"
+            android:rotation="-45.5"
+            android:pivotX="0"
+            android:pivotY="0">
+            <path
+                android:pathData="M -4.33,0 L -5.84,-5.75 L -7.75,-9.02 L -15.30,-14.51 L -174.34,-114.90 L -176.39,-116.94 L -182.01,-118.10 L -183.88,-117.73 L -186.72,-115.32 L -187.85,-109.68 L -176.19,-35.66 L -175.84,-31.75 L -176.81,-30.29 L -180.55,-28.97 L -236.09,-29.33 L -261.17,-28.97 L -269.37,-27.77 L -272.44,-26.80 L -278.80,-22.58 L -283.63,-17.05 L -286.81,-10.83 L -288.66,0 L -286.81,10.83 L -283.63,17.05 L -278.80,22.58 L -272.44,26.80 L -269.37,27.77 L -261.17,28.97 L -236.09,29.33 L -180.55,28.97 L -176.81,30.29 L -175.84,31.75 L -176.19,35.66 L -187.85,109.68 L -186.72,115.32 L -183.88,117.73 L -182.01,118.10 L -176.39,116.94 L -174.34,114.90 L -15.30,14.51 L -7.75,9.02 L -5.84,5.75 L -4.33,0 Z"
+                android:fillColor="#FFFFFF" />
+        </group>
+
+        <!-- 顶部四角星 -->
+        <path
+            android:pathData="M768,136 Q781,168 816,183 Q782,198 768,231 Q754,198 720,183 Q755,168 768,136 Z"
+            android:fillColor="#08D9B0" />
+    </group>
+</vector>

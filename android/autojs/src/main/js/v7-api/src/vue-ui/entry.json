@@ -1,0 +1,4 @@
+{
+  "icons": "icons.ts",
+  "modifier": "modifierExtension.ts"
+}

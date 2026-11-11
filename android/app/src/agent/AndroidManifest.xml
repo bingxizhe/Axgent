@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+      Axgent 产品变体：只保留 AgentChatActivity 作为启动入口，
+      移除 AutoX 自带的 Splash / 编辑器 / 设置等对外 Activity，避免呈现嵌套的 AutoX 应用。
+    -->
+    <application
+        android:icon="@mipmap/agent_icon"
+        android:label="Axgent"
+        android:roundIcon="@mipmap/agent_icon_round"
+        tools:replace="android:icon,android:roundIcon,android:label">
+
+        <activity
+            android:name="org.autojs.autojs.ui.splash.SplashActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.main.MainActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.edit.EditActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.settings.AboutActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.settings.SettingsActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.external.tasker.TaskerScriptEditActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.build.ProjectConfigActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.log.LogActivityKt"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.shortcut.ShortcutIconSelectActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.ui.timing.TimedTaskSettingActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.external.widget.ScriptWidgetSettingsActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.external.tasker.TaskPrefEditActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.external.open.RunIntentActivity"
+            tools:node="remove" />
+        <activity
+            android:name="org.autojs.autojs.external.open.OpenIntentActivity"
+            tools:node="remove" />
+
+        <activity
+            android:name="com.aiselp.autojs.codeeditor.EditActivity"
+            tools:node="remove" />
+        <activity-alias
+            android:name="org.autojs.autoxjs.external.tasker.PluginActivity"
+            tools:node="remove" />
+
+        <receiver
+            android:name="org.autojs.autojs.external.receiver.StaticBroadcastReceiver"
+            tools:node="remove" />
+
+    </application>
+</manifest>

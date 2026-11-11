@@ -1,0 +1,53 @@
+package com.stardust.autojs.project
+
+/**
+ * @author wilinz
+ * @date 2022/5/23
+ */
+object Constant {
+    object Libraries {
+        val OPEN_CV = listOf(
+            "libopencv_java4.so",
+            "libc++_shared.so",
+        )
+        val PADDLE_OCR = listOf(
+            "libc++_shared.so",
+            "libppocrv5ncnn.so"
+        )
+        val P7ZIP = listOf("libp7zip.so")
+        val TERMINAL_EMULATOR = listOf(
+            "libjackpal-androidterm5.so",
+            "libjackpal-termexec2.so"
+        )
+    }
+
+    object Assets {
+        const val PADDLE_OCR = "/models"
+        const val PROJECT = "/project"
+    }
+
+    object Permissions {
+        const val ACCESSIBILITY_SERVICES = "accessibility_services"
+        const val BACKGROUND_START = "background_start"
+        const val DRAW_OVERLAY = "draw_overlay"
+        const val EXTERNAL_STORAGE = "external_storage"
+        const val PUBLISH_NOTIFICATION = "publish_notification"
+    }
+
+    object Protocol {
+        const val ASSETS = "file:///android_asset"
+    }
+
+    object Abi {
+        const val ARM64_V8A = "arm64-v8a"
+        const val ARMEABI_V7A = "armeabi-v7a"
+        const val X86 = "x86"
+        const val X86_64 = "x86_64"
+        val abis = listOf(ARM64_V8A, ARMEABI_V7A, X86, X86_64)
+    }
+
+    object ResourceId {
+        const val LAUNCHER_ICON = "ic_launcher"
+        const val SPLASH_ICON = "autojs_logo"
+    }
+}

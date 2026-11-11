@@ -1,0 +1,125 @@
+[versions]
+activity = "1.9.1"
+coil-compose-version = "2.0.0-rc03"
+core-ktx = "1.13.0"
+google-gson = "2.9.1"
+junit = "4.13.2"
+kotlinx-coroutines-android = "1.6.2"
+lifecycle = "2.8.7"
+okhttp = "4.10.0"
+ktor-version = "2.0.3"
+androidx-test-ext-junit = "1.2.1"
+espresso-core = "3.6.1"
+appcompat = "1.7.0"
+material = "1.12.0"
+savedstate = "1.2.1"
+junit-ktx = "1.2.1"
+
+[libraries]
+# androidx
+core-ktx = { module = "androidx.core:core-ktx", version.ref = "core-ktx" }
+
+androidx-datastore = "androidx.datastore:datastore-preferences:1.1.7"
+androidx-viewpager2 = "androidx.viewpager2:viewpager2:1.1.0"
+androidx-work = "androidx.work:work-runtime:2.9.1"
+androidx-swiperefreshlayout = "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version = "2.2.0" }
+androidx-activity-ktx = { module = "androidx.activity:activity-ktx", version.ref = "activity" }
+androidx-webkit = "androidx.webkit:webkit:1.14.0"
+documentfile = "androidx.documentfile:documentfile:1.0.1"
+androidx-savedstate = { module = "androidx.savedstate:savedstate", version.ref = "savedstate" }
+androidx-savedstate-ktx = { module = "androidx.savedstate:savedstate-ktx", version.ref = "savedstate" }
+preference-ktx = "androidx.preference:preference-ktx:1.2.1"
+androidx-annotation = "androidx.annotation:annotation:1.9.1"
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "activity" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+# material ======================================
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+compose-material3 = "androidx.compose.material3:material3:1.3.2"
+compose-material3-window-size = "androidx.compose.material3:material3-window-size-class:1.3.2"
+compose-material3-adaptive-navigation-suite = "androidx.compose.material3:material3-adaptive-navigation-suite:1.3.2"
+
+#lifecycle
+lifecycle-runtime-ktx = { module = "androidx.lifecycle:lifecycle-runtime-ktx", version.ref = "lifecycle" }
+lifecycle-livedata-ktx = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycle" }
+lifecycle-runtime = { module = "androidx.lifecycle:lifecycle-runtime", version.ref = "lifecycle" }
+lifecycle-viewmodel-ktx = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycle" }
+lifecycle-viewmodel-compose = { module = "androidx.lifecycle:lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+lifecycle-viewmodel-savedstate = { module = "androidx.lifecycle:lifecycle-viewmodel-savedstate", version.ref = "lifecycle" }
+lifecycle-service = { module = "androidx.lifecycle:lifecycle-service", version.ref = "lifecycle" }
+
+# androidx compose
+compose-bom = "androidx.compose:compose-bom:2025.02.00"
+compose-ui-tooling = { module = "androidx.compose.ui:ui-tooling" }
+compose-ui-test-junit4 = { module = "androidx.compose.ui:ui-test-junit4" }
+compose-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-ui = { module = "androidx.compose.ui:ui" }
+
+compose-foundation = { module = "androidx.compose.foundation:foundation" }
+compose-foundation-layout = { module = "androidx.compose.foundation:foundation-layout" }
+compose-animation-core = { module = "androidx.compose.animation:animation-core" }
+compose-animation = { module = "androidx.compose.animation:animation" }
+
+##########################
+# rhino
+mozilla-rhino = "org.mozilla:rhino:1.8.1"
+mozilla-rhino-xml = "org.mozilla:rhino-xml:1.8.1"
+mozilla-rhino-tools = "org.mozilla:rhino-tools:1.8.1"
+# opencv
+opencv = "org.opencv:opencv:4.12.0"
+# commons
+commons-exec = "org.apache.commons:commons-exec:1.5.0"
+commons-io = "commons-io:commons-io:2.6"
+# byte-buddy-android
+byte-buddy-android = "net.bytebuddy:byte-buddy-android:1.15.11"
+
+kotlinx-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "kotlinx-coroutines-android" }
+google-gson = { module = "com.google.code.gson:gson", version.ref = "google-gson" }
+okhttp = { module = "com.squareup.okhttp3:okhttp", version.ref = "okhttp" }
+# ktor
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor-version" }
+ktor-server-cio = { module = "io.ktor:ktor-server-cio", version.ref = "ktor-version" }
+ktor-server-websockets = { module = "io.ktor:ktor-server-websockets", version.ref = "ktor-version" }
+ktor-client-websockets = { module = "io.ktor:ktor-client-websockets", version.ref = "ktor-version" }
+ktor-client-okhttp = { module = "io.ktor:ktor-client-okhttp", version.ref = "ktor-version" }
+ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor-version" }
+#rxjava
+rxjava3 = "io.reactivex.rxjava3:rxjava:3.1.11"
+rxjava3-rxandroid = "io.reactivex.rxjava3:rxandroid:3.0.2"
+javet-android-node = "com.caoccao.javet:javet-node-android:5.0.2"
+#shizuku
+shizuku-api = "dev.rikka.shizuku:api:13.1.5"
+shizuku-provider = "dev.rikka.shizuku:provider:13.1.5"
+
+# termux
+termux-shared = "com.termux.termux-app:termux-shared:0.118.0"
+terminal-view = "com.termux.termux-app:terminal-view:0.118.0"
+
+ktsh = "com.jaredrummler:ktsh:1.0.0"
+
+#test libraries ===================================
+junit = { module = "junit:junit", version.ref = "junit" }
+androidx-junit-ktx = { group = "androidx.test.ext", name = "junit-ktx", version.ref = "junit-ktx" }
+#leakcanary
+leakcanary-android = "com.squareup.leakcanary:leakcanary-android:2.14"
+leakcanary-robject-watcher-android = "com.squareup.leakcanary:leakcanary-object-watcher-android:2.14"
+retrofit2-retrofit = "com.squareup.retrofit2:retrofit:2.9.0"
+retrofit2-converter-gson = "com.squareup.retrofit2:converter-gson:2.9.0"
+test-runner = "androidx.test:runner:1.6.2"
+test-rules = "androidx.test:rules:1.6.1"
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidx-test-ext-junit" }
+espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espresso-core" }
+
+timscriptov-apksigner = "com.github.TimScriptov:apksigner:1.2.0"
+coil = { module = "io.coil-kt:coil", version.ref = "coil-compose-version" }
+coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil-compose-version" }
+coil-gif = { module = "io.coil-kt:coil-gif", version.ref = "coil-compose-version" }
+#markdown: commonmark 版本跟随 Markwon 的传递依赖
+commonmark = "com.atlassian.commonmark:commonmark:0.13.0"
+commonmark-ext-heading-anchor = "com.atlassian.commonmark:commonmark-ext-heading-anchor:0.13.0"
+markwon = "io.noties.markwon:core:4.6.2"
+[plugins]
+
+[bundles]
+ktor = ["ktor-server-core", "ktor-server-cio", "ktor-server-websockets", "ktor-client-websockets", "ktor-client-okhttp", "ktor-client-core"]
+shizuku = ["shizuku-api", "shizuku-provider"]

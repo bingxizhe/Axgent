@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 通知栏小图标：仅保留盾牌 + 星芒的单色轮廓，避免 24dp 下细节糊成一团。 -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+    <path
+        android:pathData="M12,3 L20,7 L18.8,16.5 L12,21 L5.2,16.5 L4,7 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FFFFFF"
+        android:strokeWidth="1.4"
+        android:strokeLineJoin="round" />
+    <path
+        android:pathData="M12,7.5 Q12.7,10.8 16,11.5 Q12.7,12.2 12,15.5 Q11.3,12.2 8,11.5 Q11.3,10.8 12,7.5 Z"
+        android:fillColor="#FFFFFF" />
+</vector>

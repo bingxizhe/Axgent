@@ -1,0 +1,37 @@
+# ---------------------------------------------------------------- 依赖与本地文件
+node_modules/
+local.properties
+.idea/
+*.iml
+.DS_Store
+src/config/local.js
+
+# ---------------------------------------------------------------- 构建产物
+# Gradle / IDE 生成物，任意层级
+.gradle/
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# 构建时自动生成的模板 APK（:inrt 已移除，不再生成）
+
+# 上游 / 子仓库的 .git：不进入本项目仓库
+android/.git/
+android/.git-upstream-backup/
+runtime/.git/
+runtime/.git-upstream-backup/
+
+# ---------------------------------------------------------------- 运行产物
+runs/
+*.log
+*.txt.bak
+
+# ---------------------------------------------------------------- 密钥与签名
+*.keystore
+*.jks
+*.apk
+*.aab
+
+# 根目录的 JDK / 工具链（仅本地，不入库）
+/tools/

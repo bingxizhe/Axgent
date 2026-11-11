@@ -1,0 +1,8 @@
+// 临时关闭所有 lint 任务，加速本地 debug 构建
+allprojects {
+    tasks.configureEach { task ->
+        if (task.name.toLowerCase().startsWith('lint')) {
+            task.enabled = false
+        }
+    }
+}

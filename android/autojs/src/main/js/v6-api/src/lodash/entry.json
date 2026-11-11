@@ -1,0 +1,4 @@
+{
+  "core": "core.ts",
+  "fp": "fp.ts"
+}
