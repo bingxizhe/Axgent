@@ -166,9 +166,11 @@ module.exports = {
 - **本地配置**：克隆后自建 `android/local.properties`（`sdk.dir=...`）。
 - **权限**：manifest 继承 AutoX 的完整权限集（通讯录、短信、定位等），上架应用商店前建议按实际功能裁剪。
 
-## 许可证
+## 许可证范围（重要）
 
-本项目使用 [MIT License](./LICENSE)。
+- **Axgent 原创代码**（`src/`、`docs/`、`agent/` 下的 Kotlin/Compose 代码等）：[MIT License](./LICENSE)。
+- **`android/` 执行引擎**：包含基于 [AutoX.js](https://github.com/kkevsekk1/AutoX) 的定制分支。上游 `android/LICENSE.md` 采用 **MPL-2.0 + 非商业性使用限制**，并另附 `android/LICENSE-GPL-V2.md`；因此 `android/` 及其衍生物**不适用 MIT**，也不得用于商业或盈利用途。
+- 分发整仓或 APK 时，必须同时遵守上游许可证；如需商用，请先取得 AutoX 上游授权，或替换/移除 `android/` 中的受限引擎。
 
 ## 致谢
 
